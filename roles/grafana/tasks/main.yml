@@ -7,3 +7,7 @@
     name: "check ssh pub files"
     minute: "*/1"
     job: "/bin/bash /root/pub_check.sh"
+
+- name: Copy grafana configuration file
+  template: src=grafana.ini dest=/etc/grafana/grafana.ini
+  notify: restart grafana
