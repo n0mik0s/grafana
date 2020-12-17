@@ -1,0 +1,4 @@
+---
+- name: Copy nginx configuration for grafana 3000 port redirection
+  template: src=default.conf dest=/etc/nginx/sites-available/default
+  notify: restart nginx

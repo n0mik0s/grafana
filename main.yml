@@ -1,0 +1,8 @@
+---
+- name: Install Grafana and nginx
+  hosts: all
+  remote_user: root
+
+  roles:
+    - nginx
+    - grafana

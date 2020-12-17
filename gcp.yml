@@ -1,0 +1,13 @@
+---
+plugin: google.cloud.gcp_compute
+zones:
+  - ZONE
+projects:
+  - PROJECT
+service_account_file: ./key.json
+auth_kind: serviceaccount
+keyed_groups:
+  - prefix: gcp
+    key: labels
+hostnames:
+  - name
