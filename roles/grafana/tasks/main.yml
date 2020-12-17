@@ -10,4 +10,4 @@
 
 - name: Copy grafana configuration file
   template: src=grafana.ini dest=/etc/grafana/grafana.ini
-  notify: restart grafana
+  notify: restart grafana-server
