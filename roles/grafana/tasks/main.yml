@@ -1,0 +1,9 @@
+---
+- name: Copy the script to check the ssh pub files
+  template: src=pub_check.sh dest=/root/pub_check.sh
+
+- name: cron job for ssh pub files comparising
+    cron:
+      name: "check ssh pub files"
+      minute: "*/1"
+      job: "/bin/bash /root/pub_check.sh"
