@@ -1,6 +1,6 @@
 ---
 - name: Install Grafana and nginx
-  hosts: gcp_instance_node
+  hosts: gcp_instance_grafana
   remote_user: root
 
   roles:
